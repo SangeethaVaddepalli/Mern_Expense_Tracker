@@ -1,4 +1,4 @@
-const mongoose = require("mongoose"); //import mongoose
+const mongoose = require("mongoose"); 
 
 const ExpenseSchema = mongoose.Schema({
     label:{type:String, require:true},
@@ -6,7 +6,4 @@ const ExpenseSchema = mongoose.Schema({
     date:{type:String, require:true},
 
 });
-
-
-// Export mongoose and Expense is database name
 module.exports = mongoose.model("Expense",ExpenseSchema);
