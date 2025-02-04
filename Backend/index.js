@@ -4,12 +4,8 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const expenseRoute = require("./routes/expense");
 
-
-
 dotenv.config()
-const app = express(); // calling express fun from express 
-
-
+const app = express(); 
 
 // Middleware
 app.use(cors());
