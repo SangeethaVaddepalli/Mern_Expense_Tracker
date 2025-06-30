@@ -21,6 +21,10 @@ mongoose.connect(process.env.DB_CONNECTION).then(()=>{
     console.log(err)
 })
 
+// Optional root route
+app.get("/", (req, res) => {
+  res.send("MERN Expense Tracker Backend is running ");
+});
 // server running
 app.listen(process.env.PORT,()=>{
     console.log(`Server is running on post ${process.env.PORT}`)
